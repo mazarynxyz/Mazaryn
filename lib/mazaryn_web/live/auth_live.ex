@@ -1,6 +1,6 @@
 defmodule MazarynWeb.UserLiveAuth do
-  use MazarynWeb, :live_view
-
+  import Phoenix.LiveView
+  import Phoenix.Component
   require Logger
   # def on_mount(:default, _params, _session, socket) do
   # user = %{}

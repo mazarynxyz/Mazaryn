@@ -19,6 +19,7 @@ defmodule MazarynWeb.ConnCase do
 
   using do
     quote do
+      use MazarynWe, :verified_routes
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest

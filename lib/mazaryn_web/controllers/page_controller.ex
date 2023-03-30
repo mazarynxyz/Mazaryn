@@ -2,7 +2,7 @@ defmodule MazarynWeb.PageController do
   use MazarynWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    render(conn, :index)
   end
 
   def contact(conn, _params) do
