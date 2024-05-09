@@ -1,10 +1,9 @@
-defmodule MazarynWeb.VideoLive.Show do
+defmodule MazarynWeb.AudioLive.Show do
   use MazarynWeb, :live_view
 
   import MazarynWeb.Live.Helper
 
   alias Account.Users
-  alias MazarynWeb.Components.Icons
 
   @type socket :: Phoenix.LiveView.Socket.t()
 
@@ -25,6 +24,5 @@ defmodule MazarynWeb.VideoLive.Show do
     socket
     |> assign(search: "")
     |> assign(user: user)
-    |> assign(featured_videos: [])
   end
 end
